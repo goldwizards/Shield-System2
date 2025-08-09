@@ -47,7 +47,7 @@ namespace ShieldSystem2.UI
             }
 
             // 프레임 (이전 경로 그대로)
-            Texture2D frameTex = ModContent.Request<Texture2D>("ShieldMod/Assets/ShieldFrame").Value;
+            Texture2D frameTex = ModContent.Request<Texture2D>("ShieldSystem2/Assets/ShieldFrame").Value;
             float frameScale = 1f;
             Vector2 frameOffset = new Vector2((barWidth - frameTex.Width * frameScale) / 2f, -40f);
             sb.Draw(frameTex, position + frameOffset, null, Color.White, 0f, Vector2.Zero, frameScale, SpriteEffects.None, 0f);
@@ -60,7 +60,7 @@ namespace ShieldSystem2.UI
 
         private void DrawShieldIcons(SpriteBatch sb, ShieldPlayer sp, ShieldSystemConfig cfg)
         {
-            Texture2D icon = ModContent.Request<Texture2D>("ShieldMod/Assets/ShieldIcon").Value;
+            Texture2D icon = ModContent.Request<Texture2D>("ShieldSystem2/Assets/ShieldIcon").Value;
 
             int iconCount = 5;
             float shieldPerIcon = Math.Max(1f, sp.MaxShield / (float)iconCount);
