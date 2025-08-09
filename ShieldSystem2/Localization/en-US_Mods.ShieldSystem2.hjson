@@ -1,18 +1,53 @@
-// Shield System Configuration
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldSettings: "Shield Settings"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldSettings.Tooltip: "Settings related to the shield system."
+Mods: {
+	ShieldSystem2: {
+		Config: {
+			ShieldSettings: Shield Settings
+			ShieldUI: Shield UI
+		}
+	}
+}
 
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldMaxPercent: "Shield Max Percent"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldMaxPercent.Tooltip: "Percent of max life (statLifeMax2) used to calculate Max Shield. Range: 25–100."
+Configs: {
+	ShieldSystemConfig: {
+		UseShieldPulseEffect: {
+			Tooltip: ""
+			Label: Use Shield Pulse Effect
+		}
 
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShowShieldText: "Show Shield Text"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShowShieldText.Tooltip: "Display blue combat text for absorbed damage."
+		ShieldUIStyle: {
+			Tooltip: ""
+			Label: Shield U I Style
+		}
 
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldUI: "Shield UI"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldUI.Tooltip: "Settings for how the shield is displayed on the HUD."
+		Headers: {
+			Mods: {
+				ShieldSystem2: {
+					Config: {
+						ShieldSystemConfig: {
+							ShieldUI: Mods. Shield System2. Config. Shield System Config. Shield U I Header
+							ShieldSettings: Mods. Shield System2. Config. Shield System Config. Shield Settings Header
+						}
+					}
+				}
+			}
+		}
 
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldUIStyle: "Shield UI Style"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldUIStyle.Tooltip: "Choose how the shield is displayed: Bar or Icon."
+		ShowShieldText: {
+			Tooltip: ""
+			Label: Show Shield Text
+		}
 
-Mods.ShieldSystem2.Config.ShieldSystemConfig.UseShieldPulseEffect: "Use Shield Pulse Effect"
-Mods.ShieldSystem2.Config.ShieldSystemConfig.UseShieldPulseEffect.Tooltip: "Enable or disable the pulse effect for shield icons."
+		ShieldMaxPercent: {
+			Tooltip: ""
+			Label: Shield Max Percent
+		}
+
+		DisplayName: Shield System Config
+	}
+
+	ShieldUIDisplayStyle: {
+		Icon.Label: Icon
+		Bar.Label: Bar
+		Tooltip: ""
+	}
+}
