@@ -1,0 +1,8 @@
+{
+  "rootNamespace": "ShieldSystem2",
+  "fileMap": {
+    "UI\\ShieldUI.cs": "ShieldSystem2.UI",
+    "Systems\\ShieldUISystem.cs": "ShieldSystem2.Systems",
+    "Systems\\ShieldHitEffectSystem.cs": "ShieldSystem2.Systems"
+  }
+}

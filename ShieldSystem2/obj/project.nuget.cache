@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "lZuu7x5NABk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\duswo\\OneDrive\\문서\\My Games\\Terraria\\tModLoader\\ModSources\\ShieldSystem2\\ShieldSystem2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\duswo\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512",
+    "C:\\Users\\duswo\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.18\\microsoft.netcore.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\duswo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.18\\microsoft.windowsdesktop.app.ref.8.0.18.nupkg.sha512",
+    "C:\\Users\\duswo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.18\\microsoft.aspnetcore.app.ref.8.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}
