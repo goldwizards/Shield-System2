@@ -7,8 +7,7 @@ namespace ShieldSystem2.Config
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
-        // Shield Settings
-        [Header("Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldSettings")]
+        [Header("ShieldSettings")]
         [Range(25, 100)]
         [DefaultValue(100)]
         [Increment(5)]
@@ -17,8 +16,7 @@ namespace ShieldSystem2.Config
         [DefaultValue(true)]
         public bool ShowShieldText { get; set; } = true;
 
-        // Shield UI
-        [Header("Mods.ShieldSystem2.Config.ShieldSystemConfig.ShieldUI")]
+        [Header("UI")]
         [DefaultValue(ShieldUIDisplayStyle.Bar)]
         public ShieldUIDisplayStyle ShieldUIStyle { get; set; } = ShieldUIDisplayStyle.Bar;
 
