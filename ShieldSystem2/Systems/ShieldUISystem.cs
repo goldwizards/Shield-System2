@@ -1,10 +1,9 @@
+using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 using ShieldSystem2.UI;
-using Microsoft.Xna.Framework;
 
 namespace ShieldSystem2.Systems
 {
@@ -16,20 +15,20 @@ namespace ShieldSystem2.Systems
         public override void Load()
         {
             if (Main.dedServ) return;
-            _ui = new UserInterface();
             _state = new ShieldUI();
-            _state.Activate();
+            _ui = new UserInterface();
             _ui.SetState(_state);
         }
 
         public override void UpdateUI(GameTime gameTime)
         {
+            if (Main.dedServ) return;
             _ui?.Update(gameTime);
         }
 
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
-            if (_ui is null) return;
+            if (Main.dedServ) return;
 
             int idx = layers.FindIndex(l => l.Name.Equals("Vanilla: Resource Bars"));
             if (idx < 0) idx = layers.Count - 1;
@@ -39,12 +38,11 @@ namespace ShieldSystem2.Systems
                 () =>
                 {
                     if (!Main.gameMenu)
-                    {
                         _ui.Draw(Main.spriteBatch, new GameTime());
-                    }
-                    return true;
+                    return true; // ★ 반드시 true
                 },
                 InterfaceScaleType.UI));
         }
     }
 }
+
