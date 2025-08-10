@@ -1,3 +1,5 @@
 displayName = Shield System2
 author = 금마법사
 version = 0.1
+weakReferences = CalamityMod
+sortAfter = CalamityMod
